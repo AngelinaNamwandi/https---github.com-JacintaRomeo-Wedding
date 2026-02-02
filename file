@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romeo & Wife | 07 March 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Floating Background Elements -->
+    <div class="floating-element circle" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+    <div class="floating-element leaf" style="width: 150px; height: 150px; top: 20%; right: 8%;"></div>
+    <div class="floating-element circle" style="width: 200px; height: 200px; bottom: 15%; left: 8%;"></div>
+    <div class="floating-element leaf" style="width: 100px; height: 100px; bottom: 25%; right: 10%;"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">R&W</a>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#countdown">Countdown</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#dresscode">Dress Code</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#story" class="mobile-nav-link">Our Story</a>
+        <a href="#countdown" class="mobile-nav-link">Countdown</a>
+        <a href="#details" class="mobile-nav-link">Details</a>
+        <a href="#dresscode" class="mobile-nav-link">Dress Code</a>
+        <a href="#rsvp" class="mobile-nav-link">RSVP</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="date-display">07 March 2026</div>
+            <h1 class="couple-names">Romeo & Wife</h1>
+            <h2 class="hero-subtitle">Our Story</h2>
+            <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Countdown Section -->
+    <section class="countdown-section" id="countdown">
+        <h2 class="section-title">Days Until D-day</h2>
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <div class="countdown-value" id="days">07</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-box">
+                <div class="countdown-value" id="hours">18</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-box">
+                <div class="countdown-value" id="minutes">35</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-box">
+                <div class="countdown-value" id="seconds">42</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Wedding Details Section -->
+    <section class="details-section" id="details">
+        <h2 class="section-title">Wedding Details</h2>
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="fas fa-hotel"></i>
+                </div>
+                <h3 class="detail-title">AVANI</h3>
+                <p class="detail-content">Avani Hotel</p>
+                <span class="detail-highlight">Denver, Colorado</span>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <h3 class="detail-title">Ceremony</h3>
+                <p class="detail-content">Begins at</p>
+                <span class="detail-highlight">10:00 AM</span>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h3 class="detail-title">Reception</h3>
+                <p class="detail-content">Begins at</p>
+                <span class="detail-highlight">16:30 PM</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Dresscode-section -->
+
+<!-- Replace the entire dresscode-section with this -->
+<section class="dresscode-section" id="dresscode">
+    <div class="dresscode-container">
+        <!-- Left side: 3 Color dots -->
+        <div class="color-dots-container">
+            <div class="color-dot-vertical active" data-color="#9AAB89" data-color-name="Light Sage"></div>
+            <div class="color-dot-vertical" data-color="#87AE73" data-color-name="Medium Sage"></div>
+            <div class="color-dot-vertical" data-color="#B2AC88" data-color-name="Sage Beige"></div>
+        </div>
+        
+        <!-- Middle: Fabric image -->
+        <div class="fabric-display">
+            <div class="fabric-image">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1a40ed0ada?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sage Green Fabric Texture">
+            </div>
+        </div>
+        
+        <!-- Right side: Text content -->
+        <div class="dresscode-content">
+            <h2 class="dresscode-title">Dress Code</h2>
+            <h3 class="dresscode-subtitle">Sage Green</h3>
+            
+            <div class="separator"></div>
+            
+            <p class="dresscode-description">
+                Inspired by sage greens and soft neutrals.
+            </p>
+            <p class="dresscode-subdescription">
+                Feel free to wear sage or complementary tones like eucalyptus, champagne, beige, gray, or navy.
+            </p>
+        </div>
+        
+        <!-- Slideshow section (full width) -->
+        <div class="slideshow-section">
+            <h4 class="slideshow-title">Mood Inspiration</h4>
+            
+            <div class="minimal-carousel">
+                <div class="minimal-track" id="minimalTrack">
+                    <!-- Slides will be generated by JavaScript -->
+                </div>
+                
+                <div class="minimal-nav" id="minimalDots">
+                    <!-- Dots will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Final inspiration text -->
+        <div class="inspiration-text">
+            <h3 class="inspiration-title">Inspired by Natural Greens</h3>
+            <p class="inspiration-subtitle">Harmony • Elegance • Nature</p>
+        </div>
+    </div>
+</section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp">
+        <h2 class="section-title">RSVP</h2>
+        <p class="rsvp-deadline">Please RSVP by the 18th of February</p>
+        
+        <form class="rsvp-form" id="rsvpForm">
+            <div class="form-group">
+                <label class="form-label">Will you be attending?</label>
+                <div class="attendance-options">
+                    <div class="attendance-option" data-value="yes">
+                        <div class="custom-radio"></div>
+                        <span>YES</span>
+                    </div>
+                    <div class="attendance-option" data-value="no">
+                        <div class="custom-radio"></div>
+                        <span>NO</span>
+                    </div>
+                </div>
+                <input type="hidden" id="attendance" name="attendance" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="guests">Number of guests</label>
+                <input type="number" id="guests" class="form-input" min="1" max="10" value="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="message">Message to the couple (Optional)</label>
+                <textarea id="message" class="form-input form-textarea"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit RSVP</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            We can't wait to celebrate with you.<br>
+            Thank you for being part of our story.
+        </p>
+        <div class="signature">Romeo & Wife</div>
+        <div class="footer-date">06.02.2026</div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+        
+        // Interactive elements effect
+        document.querySelectorAll('a, button, .attendance-option, .countdown-box, .detail-card, .color-chip').forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                cursor.style.borderColor = 'var(--sage)';
+                cursorFollower.style.transform = 'scale(1.5)';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.borderColor = 'rgba(138, 154, 91, 0.5)';
+                cursorFollower.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        navToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            navToggle.innerHTML = mobileNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Attendance Selection
+        document.querySelectorAll('.attendance-option').forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove selected class from all options
+                document.querySelectorAll('.attendance-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked option
+                option.classList.add('selected');
+                
+                // Update hidden input value
+                document.getElementById('attendance').value = option.getAttribute('data-value');
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('rsvpForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const attendance = document.getElementById('attendance').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const guests = document.getElementById('guests').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (!attendance) {
+                alert('Please select if you will be attending.');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For this example, we'll just show a confirmation
+            const confirmationMessage = attendance === 'yes' 
+                ? `Thank you ${name}! We're excited to celebrate with you and your ${guests} guest(s). We've sent a confirmation to ${email}.`
+                : `Thank you for letting us know, ${name}. We'll miss you on our special day.`;
+            
+            alert(confirmationMessage);
+            
+            // Reset form
+            document.getElementById('rsvpForm').reset();
+            document.querySelectorAll('.attendance-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            document.getElementById('attendance').value = '';
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            // Set the wedding date to March 7, 2026
+            const weddingDate = new Date('March 7, 2026 10:00:00').getTime();
+            const now = new Date().getTime();
+            const timeRemaining = weddingDate - now;
+            
+            if (timeRemaining > 0) {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                
+                // Update display with leading zeros
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                // If the wedding date has passed
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                document.querySelector('.section-title').textContent = "Today's The Day!";
+            }
+        }
+        
+        // Initialize countdown and update every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.padding = '1rem 5%';
+                header.style.backdropFilter = 'blur(20px)';
+                header.style.background = 'rgba(12, 12, 12, 0.9)';
+            } else {
+                header.style.padding = '1.5rem 5%';
+                header.style.backdropFilter = 'blur(10px)';
+                header.style.background = 'rgba(12, 12, 12, 0.7)';
+            }
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.countdown-box, .detail-card, .rsvp-form').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Color palette interaction
+        document.querySelectorAll('.color-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                const colorName = chip.querySelector('.color-name').textContent;
+                alert(`You selected ${colorName}! This would be a beautiful choice for the wedding.`);
+            });
+        });
+
+        // Add this script for the corrected dress code section
+document.addEventListener('DOMContentLoaded', function() {
+    // Mood inspiration slides data
+    const moodSlides = [
+        {
+            title: "Forest Ambiance",
+            caption: "Natural greens in serene forest settings",
+            image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        },
+        {
+            title: "Botanical Elegance",
+            caption: "Sophisticated green tones in refined settings",
+            image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
+        },
+        {
+            title: "Natural Harmony",
+            caption: "Balanced green palette in natural light",
+            image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        }
+    ];
+    
+    // Initialize the minimal slideshow
+    function initMinimalSlideshow() {
+        const track = document.getElementById('minimalTrack');
+        const dotsContainer = document.getElementById('minimalDots');
+        
+        // Clear existing content
+        track.innerHTML = '';
+        dotsContainer.innerHTML = '';
+        
+        // Create slides and dots
+        moodSlides.forEach((slide, index) => {
+            // Create slide
+            const slideElement = document.createElement('div');
+            slideElement.className = 'minimal-slide';
+            
+            slideElement.innerHTML = `
+                <img src="${slide.image}" alt="${slide.title}">
+                <div class="minimal-overlay">
+                    <h5 class="minimal-slide-title">${slide.title}</h5>
+                    <p class="minimal-slide-caption">${slide.caption}</p>
+                </div>
+            `;
+            
+            track.appendChild(slideElement);
+            
+            // Create dot
+            const dotElement = document.createElement('div');
+            dotElement.className = `minimal-dot ${index === 0 ? 'active' : ''}`;
+            dotElement.setAttribute('data-index', index);
+            dotsContainer.appendChild(dotElement);
+            
+            // Add click event to dot
+            dotElement.addEventListener('click', () => {
+                goToSlide(index);
+            });
+        });
+    }
+    
+    let currentMoodSlide = 0;
+    
+    function goToSlide(index) {
+        currentMoodSlide = index;
+        updateMinimalSlideshow();
+    }
+    
+    function updateMinimalSlideshow() {
+        const track = document.getElementById('minimalTrack');
+        const slideWidth = 100 / 3; // 3 slides visible
+        track.style.transform = `translateX(-${currentMoodSlide * slideWidth}%)`;
+        
+        // Update active dots
+        document.querySelectorAll('.minimal-dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentMoodSlide);
+        });
+    }
+    
+    // Color dots interaction - CORRECTED
+    const colorDots = document.querySelectorAll('.color-dot-vertical');
+    
+    colorDots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            // Remove active class from all dots
+            colorDots.forEach(d => d.classList.remove('active'));
+            
+            // Add active class to clicked dot
+            this.classList.add('active');
+            
+            // Get the color value
+            const color = this.getAttribute('data-color');
+            const colorName = this.getAttribute('data-color-name');
+            
+            // Change the fabric image based on color
+            changeFabricImage(color, colorName);
+            
+            // Update slideshow based on color
+            updateSlideshowByColor(color);
+        });
+    });
+    
+    function changeFabricImage(color, colorName) {
+        const fabricImage = document.querySelector('.fabric-image img');
+        let newImage = '';
+        let newAlt = '';
+        
+        switch(color) {
+            case '#9AAB89':
+                newImage = 'https://images.unsplash.com/photo-1558769132-cb1a40ed0ada?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
+                newAlt = `Light Sage Green Fabric - ${colorName}`;
+                // Update subtitle color
+                document.querySelector('.dresscode-subtitle').style.color = '#9AAB89';
+                document.querySelector('.separator').style.background = 'linear-gradient(90deg, #9AAB89, #87AE73)';
+                break;
+            case '#87AE73':
+                newImage = 'https://images.unsplash.com/photo-1523359346063-d879354c0ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
+                newAlt = `Medium Sage Green Fabric - ${colorName}`;
+                // Update subtitle color
+                document.querySelector('.dresscode-subtitle').style.color = '#87AE73';
+                document.querySelector('.separator').style.background = 'linear-gradient(90deg, #87AE73, #B2AC88)';
+                break;
+            case '#B2AC88':
+                newImage = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
+                newAlt = `Sage Beige Fabric - ${colorName}`;
+                // Update subtitle color
+                document.querySelector('.dresscode-subtitle').style.color = '#B2AC88';
+                document.querySelector('.separator').style.background = 'linear-gradient(90deg, #B2AC88, #9AAB89)';
+                break;
+        }
+        
+        // Fade out effect
+        fabricImage.style.opacity = '0';
+        
+        setTimeout(() => {
+            fabricImage.src = newImage;
+            fabricImage.alt = newAlt;
+            fabricImage.style.opacity = '1';
+        }, 300);
+    }
+    
+    function updateSlideshowByColor(color) {
+        // Update mood slides based on selected color
+        const moodTitles = [
+            ["Forest Ambiance", "Botanical Elegance", "Natural Harmony"],
+            ["Mossy Depths", "Olive Sophistication", "Fresh Greens"],
+            ["Sandy Neutrals", "Warm Beige", "Earthy Tones"]
+        ];
+        
+        const moodCaptions = [
+            ["Natural greens in serene forest settings", "Sophisticated green tones in refined settings", "Balanced green palette in natural light"],
+            ["Deep green hues in shadowy landscapes", "Rich olive tones in elegant arrangements", "Vibrant green accents in natural light"],
+            ["Soft neutral textures in warm settings", "Earthy beige tones in elegant compositions", "Natural sandy hues in organic arrangements"]
+        ];
+        
+        const moodImages = [
+            [
+                "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+                "https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1172&q=80",
+                "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+            ],
+            [
+                "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+                "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+                "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+            ],
+            [
+                "https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80",
+                "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+            ]
+        ];
+        
+        let index = 0;
+        switch(color) {
+            case '#9AAB89': index = 0; break;
+            case '#87AE73': index = 1; break;
+            case '#B2AC88': index = 2; break;
+        }
+        
+        // Update the slideshow
+        const slides = document.querySelectorAll('.minimal-slide');
+        slides.forEach((slide, slideIndex) => {
+            const img = slide.querySelector('img');
+            const title = slide.querySelector('.minimal-slide-title');
+            const caption = slide.querySelector('.minimal-slide-caption');
+            
+            img.src = moodImages[index][slideIndex];
+            title.textContent = moodTitles[index][slideIndex];
+            caption.textContent = moodCaptions[index][slideIndex];
+        });
+        
+        // Reset to first slide
+        currentMoodSlide = 0;
+        updateMinimalSlideshow();
+    }
+    
+    // Auto-advance slideshow
+    let slideshowInterval;
+    
+    function startSlideshow() {
+        slideshowInterval = setInterval(() => {
+            currentMoodSlide = (currentMoodSlide + 1) % moodSlides.length;
+            updateMinimalSlideshow();
+        }, 4000);
+    }
+    
+    function stopSlideshow() {
+        clearInterval(slideshowInterval);
+    }
+    
+    // Pause on hover
+    const carousel = document.querySelector('.minimal-carousel');
+    carousel.addEventListener('mouseenter', stopSlideshow);
+    carousel.addEventListener('mouseleave', startSlideshow);
+    
+    // Initialize everything
+    initMinimalSlideshow();
+    startSlideshow();
+});
+
+
+
+
+
+
+    </script>
+</body>
+</html>
